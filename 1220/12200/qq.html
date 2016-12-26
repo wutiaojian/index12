@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/qq.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body>
+	<header>
+		<span class="head-left"><i class="fa fa-angle-left"></i> 返回</span>
+		<h3>腾讯智慧校园</h3>
+		<span class="head-right">···</span>
+	</header>
+	<div class="swiper-container">
+    <div class="swiper-wrapper">
+        	<div class="swiper-slide">
+        		<div class="main">
+			<div class="logo">
+				<img src="img/cover-logo1.png" alt="">
+			</div>
+			<div class="tu">
+				<img src="img/cover-city.png" alt="">
+			</div>
+			<img src="img/cover-red-car.png" class="red-car">
+			<img src="img/cover-yellow-car.png" class="yellow-car">
+		</div>
+        	</div>
+       		<div class="swiper-slide">
+       			<div class="main-one">
+       				<div class="fff">
+       					<h2>互联网+校园</h2>
+       					<dl>
+       						<dt><img src="img/t1-1-0.png"></dt>
+       						<dd>
+       							<h3>信息安全防护体系</h3>
+       							<p>腾讯企业级安全防护，成系统的保护方案</p>
+       						</dd>
+       					</dl>
+       					<ul class="fff-xuan">
+       						<li>安全<br>防护</li>
+       						<li>微信连接</li>
+       						<li>场景服务</li>
+       						<li>新闻发布</li>
+       						<li>数据管理</li>
+       					</ul>
+       				</div>
+       			</div>
+       		</div>
+       		<div class="swiper-slide">Slide 3</div>
+   	 </div>
+	</div>
+</body>
+</html>
+<script src="js/swiper.min.js"></script>
+<script src="js/zepto.min.js"></script>
+<script>
+	  var mySwiper = new Swiper ('.swiper-container', {
+    		direction: 'vertical',
+  }) 
+	  var w=$(".fff-xuan li").width();
+	  $(".fff-xuan li").height(w)
+	  var h=$(".fff-xuan li").height();
+	  console.log(w)
+	  console.log(h)
+</script>
